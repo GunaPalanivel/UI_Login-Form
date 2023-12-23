@@ -1,0 +1,228 @@
+/* Importing the Roboto font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+/* Resetting the default margin, padding, and box-sizing for all elements */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styling the body element */
+body {
+  font-family: Roboto, system-ui, sans-serif; /* Setting the font family for the body */
+  background-color: #242d34; /* Setting the background color */
+  color: #e7e9ea; /* Setting the text color */
+  height: 100vh; /* Setting the height to 100% of the viewport height */
+  display: flex; /* Displaying the body as a flex container */
+  justify-content: center; /* Centering the content horizontally */
+  align-items: center; /* Centering the content vertically */
+}
+
+/* Styling for buttons */
+button {
+  font-family: inherit; /* Inheriting the font family from the parent element */
+  border: 0; /* Removing the border */
+  color: inherit; /* Inheriting the text color */
+  background: none; /* Removing the background */
+  cursor: pointer; /* Setting the cursor to a pointer */
+}
+
+/* Styling for anchor tags */
+a {
+  text-decoration: none; /* Removing the underline */
+  color: inherit; /* Inheriting the text color */
+}
+
+/* Styling for the container element */
+.container {
+  max-width: 600px; /* Setting the maximum width */
+  width: 100%; /* Setting the width to 100% */
+  background-color: #000; /* Setting the background color */
+  padding: 24px 20px; /* Setting the padding */
+  border-radius: 16px; /* Setting the border radius */
+  margin-inline: 2rem; /* Setting the horizontal margin */
+  display: flex; /* Displaying the container as a flex container */
+  flex-direction: column; /* Setting the flex direction to column */
+  justify-content: space-between; /* Distributing the space evenly between the child elements */
+}
+
+/* Styling for the header element */
+.header {
+  color: #d6d9db; /* Setting the text color */
+  width: 100%; /* Setting the width to 100% */
+  display: flex; /* Displaying the header as a flex container */
+  justify-content: center; /* Centering the content horizontally */
+  align-items: center; /* Centering the content vertically */
+  position: relative; /* Setting the position to relative */
+}
+
+/* Styling for the close button */
+.close-button {
+  position: absolute; /* Setting the position to absolute */
+  top: 0; /* Positioning the button at the top */
+  left: 0; /* Positioning the button at the left */
+  font-size: 20px; /* Setting the font size */
+  padding: 7px 11px; /* Setting the padding */
+  border-radius: 50%; /* Setting the border radius to create a circular shape */
+}
+
+.close-button:hover {
+  background-color: #212222; /* Changing the background color on hover */
+}
+
+/* Styling for the logo */
+.logo {
+  font-size: 30px; /* Setting the font size */
+}
+
+/* Styling for the content element */
+.content {
+  width: 300px; /* Setting the width */
+  text-align: center; /* Centering the text */
+  margin-inline: auto; /* Centering the element horizontally */
+}
+
+.content h1 {
+  margin-block: 28px; /* Setting the margin */
+}
+
+/* Styling for the action buttons */
+.action-buttons {
+  display: flex; /* Displaying the buttons as a flex container */
+  flex-direction: column; /* Setting the flex direction to column */
+  gap: 24px; /* Setting the gap between the buttons */
+  margin-top: 36px; /* Setting the top margin */
+}
+
+.primary-button,
+.secondary-button {
+  width: 100%; /* Setting the width to 100% */
+  border-radius: 20px; /* Setting the border radius */
+  padding: 8px 0; /* Setting the padding */
+  font-size: 15px; /* Setting the font size */
+  font-weight: 500; /* Setting the font weight */
+}
+
+.primary-button {
+  background-color: #fff; /* Setting the background color */
+  color: #0f1419; /* Setting the text color */
+}
+
+.primary-button:hover {
+  background-color: #e6e6e6; /* Changing the background color on hover */
+}
+
+.secondary-button {
+  background-color: transparent; /* Setting the background color to transparent */
+  color: #fff; /* Setting the text color */
+  border: 1px solid #536471; /* Setting the border */
+}
+
+.secondary-button:hover {
+  background-color: #181919; /* Changing the background color on hover */
+}
+
+/* Styling for the sign-in button */
+.sign-in-button {
+  display: flex; /* Displaying the button as a flex container */
+  justify-content: center; /* Centering the content horizontally */
+  align-items: center; /* Centering the content vertically */
+  gap: 8px; /* Setting the gap between the elements */
+}
+
+.sign-in-button object {
+  width: 24px; /* Setting the width */
+  height: 24px; /* Setting the height */
+}
+
+/* Styling for the divider */
+.divider {
+  width: 100%; /* Setting the width to 100% */
+  margin-block: 20px; /* Setting the margin */
+  position: relative; /* Setting the position to relative */
+}
+
+.divider p::before,
+.divider p::after {
+  content: ""; /* Adding content */
+  position: absolute; /* Setting the position to absolute */
+  top: 50%; /* Positioning the element at the center vertically */
+  transform: translateY(-50%); /* Centering the element vertically */
+  width: 45%; /* Setting the width */
+  height: 1px; /* Setting the height */
+  background-color: #333639; /* Setting the background color */
+}
+
+.divider p::before {
+  left: 0; /* Positioning the element at the left */
+}
+
+.divider p::after {
+  right: 0; /* Positioning the element at the right */
+}
+
+/* Styling for the email log-in */
+.email-log-in {
+  width: 100%; /* Setting the width to 100% */
+  position: relative; /* Setting the position to relative */
+}
+
+.email-log-in input {
+  width: 100%; /* Setting the width to 100% */
+  border-radius: 6px; /* Setting the border radius */
+  background-color: transparent; /* Setting the background color to transparent */
+  border: 1px solid #333639; /* Setting the border */
+  outline: none; /* Removing the outline */
+  padding: 20px 10px; /* Setting the padding */
+  color: white; /* Setting the text color */
+  font-size: 18px; /* Setting the font size */
+  font-family: "Roboto"; /* Setting the font family */
+}
+
+input::placeholder {
+  opacity: 0; /* Setting the opacity to 0 */
+}
+
+input + label {
+  position: absolute; /* Setting the position to absolute */
+  top: 20px; /* Positioning the label at the top */
+  left: 10px; /* Positioning the label at the left */
+  color: #71767b; /* Setting the text color */
+  font-size: 18px; /* Setting the font size */
+  pointer-events: none; /* Disabling pointer events */
+  transition: 200ms ease; /* Adding a transition effect */
+}
+
+input:focus {
+  outline: 1px solid #1d9bf0; /* Adding an outline on focus */
+}
+
+input:focus + label {
+  color: #1d9bf0; /* Changing the label color on focus */
+}
+
+input:not(:placeholder-shown) + label,
+input:focus + label {
+  top: 6px; /* Positioning the label at the top with reduced margin */
+  left: 10px; /* Positioning the label at the left */
+  font-size: 12px; /* Setting the font size */
+}
+
+/* Styling for the sign-up section */
+.sign-up {
+  margin-top: 32px; /* Setting the top margin */
+  font-weight: 300; /* Setting the font weight */
+  text-align: center; /* Centering the text */
+}
+
+.sign-up a {
+  color: #1d9bf0; /* Setting the text color */
+}
+
+.sign-up a:hover {
+  text-decoration: underline; /* Adding underline on hover */
+  text-decoration-color: #1d9bf0; /* Setting the underline color on hover */
+}

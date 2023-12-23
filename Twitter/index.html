@@ -1,0 +1,68 @@
+<!DOCTYPE html> <!-- Defines the document type as HTML -->
+<html lang="en"> <!-- Defines the language of the document as English -->
+
+<head> <!-- Contains metadata and external resources for the document -->
+  <meta charset="UTF-8"> <!-- Specifies the character encoding for the document as UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Sets the viewport properties for responsive design -->
+  <title>Log in - Part 01</title> <!-- Sets the title of the document -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Includes the Font Awesome CSS library -->
+  <link rel="stylesheet" href="styles.css"> <!-- Includes a custom CSS file -->
+</head>
+
+<body> <!-- Contains the visible content of the document -->
+  <div class="container"> <!-- Defines a container for the page content -->
+    <div class="header"> <!-- Defines the header section of the page -->
+      <button class="close-button"> <!-- Defines a button with the class "close-button" -->
+        <i class="fa-solid fa-xmark"></i> <!-- Includes a Font Awesome icon for a close mark -->
+      </button>
+      <a class="logo" href="#"> <!-- Defines a link with the class "logo" -->
+        <i class="fa-brands fa-twitter"></i> <!-- Includes a Font Awesome icon for the Twitter logo -->
+      </a>
+    </div>
+
+    <div class="content"> <!-- Defines the main content section of the page -->
+      <h1>Log in to Twitter</h1> <!-- Displays a heading with the text "Log in to Twitter" -->
+
+      <div class="action-buttons"> <!-- Defines a container for action buttons -->
+        <button class="primary-button sign-in-button">
+          <!-- Defines a button with the classes "primary-button" and "sign-in-button" -->
+          <object data="./google.svg"></object>
+          <!-- Includes an object element with the data attribute pointing to a Google SVG file -->
+          <span>Sign in with Google</span> <!-- Displays the text "Sign in with Google" -->
+        </button>
+        <button class="primary-button sign-in-button">
+          <!-- Defines a button with the classes "primary-button" and "sign-in-button" -->
+          <object data="./apple.svg"></object>
+          <!-- Includes an object element with the data attribute pointing to an Apple SVG file -->
+          <span>Sign in with Apple</span> <!-- Displays the text "Sign in with Apple" -->
+        </button>
+      </div>
+
+      <div class="divider"> <!-- Defines a container for a divider -->
+        <p>or</p> <!-- Displays the text "or" -->
+      </div>
+
+      <div class="email-log-in"> <!-- Defines a container for email login -->
+        <input type="text" id="log-in" placeholder="Email">
+        <!-- Defines an input field for email with the id "log-in" and a placeholder text "Email" -->
+        <label for="log-in">Phone, email or username</label>
+        <!-- Displays a label for the input field with the text "Phone, email or username" -->
+      </div>
+
+      <div class="action-buttons"> <!-- Defines a container for action buttons -->
+        <button class="primary-button">Next</button>
+        <!-- Defines a button with the class "primary-button" and the text "Next" -->
+        <button class="secondary-button">Forgot Password?</button>
+        <!-- Defines a button with the class "secondary-button" and the text "Forgot Password?" -->
+      </div>
+    </div>
+    <div class="sign-up"> <!-- Defines a container for the sign-up section -->
+      <p>Don't have an account? <a href="#">Sign up</a></p>
+      <!-- Displays a paragraph with the text "Don't have an account?" and a link with the text "Sign up" -->
+    </div>
+  </div>
+</body>
+
+</html>
